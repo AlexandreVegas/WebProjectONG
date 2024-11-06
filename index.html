@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anjos do Coração - Instituição de Caridade</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Anjos do Coração</h1>
+    </header>
+    <!--Aba de navegações-->
+    <nav>
+        <ul>
+            <li><a href="#sobre" class="tab-link">Sobre</a></li>
+            <li><a href="#contatos" class="tab-link">Contatos</a></li>
+            <li><a href="#projetos" class="tab-link">Projetos</a></li>
+            <li><a href="#viagens" class="tab-link">Viagens</a></li>
+            <li><a href="#loja" class="tab-link">Loja</a></li>
+        </ul>
+    </nav>
+    <div class="content">
+        <!--Sobre os Anjos do Coração-->
+        <div id="sobre" class="tab-content">
+            <h2>Sobre os Anjos do Coração</h2>
+            <img src="A:\Programação\Trabalho_Site_Final\imagens\criancas felizer.jpg" alt="Crianças felizes" class="float-right">
+            <p>Fundada em 2005, a Anjos do Coração nasceu do sonho de um grupo de amigos que acreditava no poder transformador do amor e da educação. Nossa jornada começou em uma pequena sala comunitária, onde oferecíamos aulas de reforço para crianças carentes do bairro.</p>
+            <p>Com o passar dos anos, nossa missão cresceu junto com o número de vidas que tocávamos. Expandimos nossas atividades para incluir programas de alimentação, saúde e bem-estar, sempre com o foco em proporcionar um futuro melhor para as crianças e suas famílias.</p>
+            <img src="A:\Programação\Trabalho_Site_Final\imagens\voluntarios.jpg" alt="Voluntários em ação" class="float-left">
+            <p>Hoje, a Anjos do Coração é reconhecida como uma das instituições de caridade mais atuantes da região. Nosso compromisso com a transparência e a eficácia nos programas nos rendeu parcerias valiosas com empresas e outras organizações sem fins lucrativos.</p>
+            <p>Acreditamos que cada criança merece a oportunidade de sonhar e realizar seu potencial pleno. Por isso, nossos programas vão além da assistência básica, buscando inspirar e capacitar os jovens para que se tornem agentes de mudança em suas próprias comunidades.</p>
+            <p>A cada sorriso que ajudamos a brotar, a cada sonho que ajudamos a construir, renovamos nossa certeza de que estamos no caminho certo. E convidamos você a fazer parte dessa história de amor e transformação. Junte-se a nós e seja um Anjo do Coração!</p>
+        </div>
+        
+        <!--Aba de Contatos-->
+        <div id="contatos" class="tab-content">
+            <h2>Contatos</h2>
+            <div class="bio-container">
+                <img src="A:\Programação\Trabalho_Site_Final\imagens\responsavel.jpg" alt="Maria Silva" class="bio-image">
+                <div class="bio-text">
+                    <h3>Maria Silva - Fundadora e Diretora Executiva</h3>
+                    <p>Maria Silva, 45 anos, é o coração pulsante por trás dos Anjos do Coração. Formada em Serviço Social, com mestrado em Políticas Públicas, Maria dedicou sua vida a fazer a diferença na vida das crianças menos favorecidas.</p>
+                    <p>Sua jornada começou aos 16 anos, quando começou a trabalhar como voluntária em um orfanato local. Essa experiência moldou sua visão de mundo e a inspirou a fundar os Anjos do Coração aos 28 anos.</p>
+                    <p>Sob sua liderança apaixonada e inovadora, a instituição cresceu de um pequeno projeto local para uma organização respeitada nacionalmente, impactando milhares de vidas anualmente.</p>
+                    <p>Email: <a href="mailto:maria@anjosdocoracao.org">maria@anjosdocoracao.org</a></p>
+                    <p>Telefone: (11) 1234-5678</p>
+                </div>
+            </div>
+            <h3>Junte-se a nós!</h3>
+            <p>Estamos sempre buscando voluntários e parceiros para se unirem à nossa missão. Se você quer fazer parte de algo significativo e ajudar crianças necessitadas, entre em contato e faça parte dos Anjos do Coração.</p>
+        </div>
+        
+        <!--Aba de Projetos-->
+        <div id="projetos" class="tab-content">
+            <h2>Nossos Projetos</h2>
+            <div class="grid">
+                <div class="projeto">
+                    <img src="A:\Programação\Trabalho_Site_Final\imagens\projeto1.jpg" alt="Crianças recebendo alimentos">
+                    <div class="projeto-info">
+                        <h3>Alimentação para Todos</h3>
+                        <p>Garantimos refeições nutritivas diárias para mais de 500 crianças em situação de vulnerabilidade. Além de combater a fome, o projeto também educa sobre nutrição e hábitos alimentares saudáveis.</p>
+                        <p><strong>Status:</strong> Em andamento</p>
+                        <p><strong>Impacto:</strong> 500+ crianças beneficiadas diariamente</p>
+                        <p><strong>Inscritos:</strong> <span class="inscritos-count" data-projeto="alimentacao">0</span></p>
+                        <button class="cadastro-btn" data-projeto="alimentacao">Participar do Projeto</button>
+                    </div>
+                </div>
+                <div class="projeto">
+                    <img src="A:\Programação\Trabalho_Site_Final\imagens\projeto2.jpg" alt="Crianças em sala de aula">
+                    <div class="projeto-info">
+                        <h3>Educação Infantil</h3>
+                        <p>Oferecemos aulas de reforço, oficinas de arte e música, e atividades extracurriculares para complementar a educação formal das crianças atendidas.</p>
+                        <p><strong>Próximo evento:</strong> 15/11 - Festival de Talentos</p>
+                        <p><strong>Impacto:</strong> 300 crianças participantes semanalmente</p>
+                    </div>
+                </div>
+                <div class="projeto">
+                    <img src="A:\Programação\Trabalho_Site_Final\imagens\projeto3.jpg" alt="Crianças e idosos interagindo">
+                    <div class="projeto-info">
+                        <h3>Pontes de Gerações</h3>
+                        <p>Um projeto inovador que promove a interação entre crianças e idosos, fomentando a troca de experiências, o respeito mútuo e o aprendizado intergeracional.</p>
+                        <p><strong>Status:</strong> Em andamento</p>
+                        <p><strong>Frequência:</strong> Evento mensal</p>
+                        <p><strong>Impacto:</strong> 100 crianças e 50 idosos participantes por evento</p>
+                        <p><strong>Inscritos:</strong> <span class="inscritos-count" data-projeto="pontes">0</span></p>
+                        <button class="cadastro-btn" data-projeto="pontes">Participar do Projeto</button>
+                    </div>
+                </div>
+                <div class="projeto">
+                    <img src="A:\Programação\Trabalho_Site_Final\imagens\projeto4.jpg" alt="Crianças praticando esportes">
+                    <div class="projeto-info">
+                        <h3>Esporte é Vida</h3>
+                        <p>Através do esporte, promovemos saúde, disciplina e trabalho em equipe. Oferecemos aulas de diversas modalidades esportivas e organizamos competições amistosas.</p>
+                        <p><strong>Modalidades:</strong> Futebol, Vôlei, Atletismo, Natação</p>
+                        <p><strong>Impacto:</strong> 250 crianças e adolescentes atendidos</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pop-up de cadastro -->
+    <div id="cadastro-popup" class="popup">
+        <div class="popup-content">
+            <h2>Cadastro para Participação</h2>
+            <form id="cadastro-form">
+                <input type="hidden" id="projeto-id" name="projeto-id">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" required>
+                <button type="submit">Enviar Cadastro</button>
+            </form>
+            <button id="fechar-popup">Fechar</button>
+        </div>
+    </div>
+</body>
+</html>
+
+<!--Aba de viagens-->
+<div id="viagens" class="tab-content">
+    <h2>Viagens Educativas</h2>
+    <p>Nossas viagens educativas são uma oportunidade única para as crianças expandirem seus horizontes, conhecerem novos lugares e culturas, e aplicarem na prática o que aprendem em nossos programas.</p>
+    <table>
+        <thead>
+            <tr>
+                <th>Destino</th>
+                <th>Preço</th>
+                <th>Duração</th>
+                <th>Tipo</th>
+                <th>Vagas</th>
+                <th>Ação</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo - Museus e Parques</td>
+                <td>R$ 100,00</td>
+                <td>2 dias</td>
+                <td>Ida e Volta</td>
+                <td class="vagas-disponiveis" data-destino="São Paulo">20</td>
+                <td><button class="comprar-passagem" data-destino="São Paulo">Comprar</button></td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro - Praias e História</td>
+                <td>R$ 150,00</td>
+                <td>3 dias</td>
+                <td>Ida e Volta</td>
+                <td class="vagas-disponiveis" data-destino="Rio de Janeiro">15</td>
+                <td><button class="comprar-passagem" data-destino="Rio de Janeiro">Comprar</button></td>
+            </tr>
+            <tr>
+                <td>Campos do Jordão - Natureza</td>
+                <td>R$ 120,00</td>
+                <td>2 dias</td>
+                <td>Ida e Volta</td>
+                <td class="vagas-disponiveis" data-destino="Campos do Jordão">25</td>
+                <td><button class="comprar-passagem" data-destino="Campos do Jordão">Comprar</button></td>
+            </tr>
+            <tr>
+                <td>Brasília - Cidadania</td>
+                <td>R$ 200,00</td>
+                <td>4 dias</td>
+                <td>Ida e Volta</td>
+                <td class="vagas-disponiveis" data-destino="Brasília">10</td>
+                <td><button class="comprar-passagem" data-destino="Brasília">Comprar</button></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+</div>
+
+<!-- Pop-up de cadastro para viagens -->
+<div id="viagem-popup" class="popup">
+<div class="popup-content">
+    <h2>Cadastro para Viagem</h2>
+    <form id="viagem-form">
+        <input type="hidden" id="viagem-destino" name="viagem-destino">
+        <label for="viagem-nome">Nome:</label>
+        <input type="text" id="viagem-nome" name="viagem-nome" required>
+        <label for="viagem-cpf">CPF:</label>
+        <input type="text" id="viagem-cpf" name="viagem-cpf" required pattern="\d{3}\.\d{3}\.\d{3}-\d{2}">
+        <label for="viagem-telefone">Telefone:</label>
+        <input type="tel" id="viagem-telefone" name="viagem-telefone" required>
+        <label for="viagem-quantidade">Quantidade de vagas:</label>
+        <input type="number" id="viagem-quantidade" name="viagem-quantidade" min="1" max="5" required>
+        <button type="submit">Reservar</button>
+    </form>
+    <button id="fechar-viagem-popup">Fechar</button>
+</div>
+</div>
+</body>
+</html>
+
+<!--Aba de loja-->
+<div id="loja" class="tab-content">
+    <h2>Loja Solidária</h2>
+    <p>Todos os produtos vendidos em nossa loja têm 100% do lucro revertido para os projetos dos Anjos do Coração. Ao comprar, você não só leva um produto de qualidade, mas também ajuda a transformar vidas!</p>
+    <div class="grid">
+        <div class="produto">
+            <img src="A:\Programação\Trabalho_Site_Final\imagens\camiseta rosa.jpg" alt="Camiseta Básica">
+            <div class="produto-info">
+                <h3>Camiseta Básica</h3>
+                <p>Tamanho: P, M, G</p>
+                <p>Preço: R$ 29,90</p>
+                <button class="comprar-produto" data-produto="Camiseta Básica" data-preco="29.90">Comprar</button>
+            </div>
+        </div>
+        <div class="produto">
+            <img src="A:\Programação\Trabalho_Site_Final\imagens\calça Jeans.jpg" alt="Calça Jeans">
+            <div class="produto-info">
+                <h3>Calça Jeans</h3>
+                <p>Tamanho: 38, 40, 42</p>
+                <p>Preço: R$ 59,90</p>
+                <button class="comprar-produto" data-produto="Calça Jeans" data-preco="59.90">Comprar</button>
+            </div>
+        </div>
+        <div class="produto">
+            <img src="A:\Programação\Trabalho_Site_Final\imagens\jaqueta de couro.jpg" alt="Jaqueta de Couro">
+            <div class="produto-info">
+                <h3>Jaqueta de Couro</h3>
+                <p>Tamanho: M, G, GG</p>
+                <p>Preço: R$ 89,90</p>
+                <button class="comprar-produto" data-produto="Jaqueta de Couro" data-preco="89.90">Comprar</button>
+            </div>
+        </div>
+        <div class="produto">
+            <img src="A:\Programação\Trabalho_Site_Final\imagens\mochila.jpg" alt="Mochila Escolar">
+            <div class="produto-info">
+                <h3>Mochila Escolar</h3>
+                <p>Capacidade: 20L</p>
+                <p>Preço: R$ 45,00</p>
+                <button class="comprar-produto" data-produto="Mochila Escolar" data-preco="45.00">Comprar</button>
+            </div>
+        </div>
+        <div class="produto">
+            <img src="A:\Programação\Trabalho_Site_Final\imagens\Kit de Materiais Escolares.jpg" alt="Kit de Materiais Escolares">
+            <div class="produto-info">
+                <h3>Kit de Materiais Escolares</h3>
+                <p>Contém: Cadernos, lápis, borracha, etc.</p>
+                <p>Preço: R$ 35,00</p>
+                <button class="comprar-produto" data-produto="Kit de Materiais Escolares" data-preco="35.00">Comprar</button>
+            </div>
+        </div>
+        <div class="produto">
+            <img src="A:\Programação\Trabalho_Site_Final\imagens\Livro Infantil.jpg" alt="Livro Infantil">
+            <div class="produto-info">
+                <h3>Livro Infantil</h3>
+                <p>Título: "Aventuras no Parque"</p>
+                <p>Preço: R$ 19,90</p>
+                <button class="comprar-produto" data-produto="Livro Infantil" data-preco="19.90">Comprar</button>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<!-- Pop-up de compra de produto -->
+<div id="compra-popup" class="popup">
+<div class="popup-content">
+    <h2>Compra de Produto</h2>
+    <form id="compra-form">
+        <input type="hidden" id="produto-nome" name="produto-nome">
+        <input type="hidden" id="produto-preco" name="produto-preco">
+        <label for="compra-nome">Nome:</label>
+        <input type="text" id="compra-nome" name="compra-nome" required>
+        <label for="compra-telefone">Telefone:</label>
+        <input type="tel" id="compra-telefone" name="compra-telefone" required>
+        <label for="compra-cep">CEP:</label>
+        <input type="text" id="compra-cep" name="compra-cep" required>
+        <label for="compra-rua">Rua:</label>
+        <input type="text" id="compra-rua" name="compra-rua" required>
+        <label for="compra-bairro">Bairro:</label>
+        <input type="text" id="compra-bairro" name="compra-bairro" required>
+        <label for="compra-numero">Número:</label>
+        <input type="text" id="compra-numero" name="compra-numero" required>
+        <fieldset>
+            <legend>Forma de Pagamento:</legend>
+            <label><input type="radio" name="pagamento" value="dinheiro" required> Dinheiro</label>
+            <label><input type="radio" name="pagamento" value="cartao"> Cartão</label>
+            <label><input type="radio" name="pagamento" value="cheque"> Cheque</label>
+            <label><input type="radio" name="pagamento" value="pix"> PIX</label>
+        </fieldset>
+        <div id="dados-cartao" style="display: none;">
+            <label for="cartao-numero">Número do Cartão:</label>
+            <input type="text" id="cartao-numero" name="cartao-numero">
+            <label for="cartao-nome">Nome no Cartão:</label>
+            <input type="text" id="cartao-nome" name="cartao-nome">
+            <label for="cartao-validade">Validade:</label>
+            <input type="text" id="cartao-validade" name="cartao-validade" placeholder="MM/AA">
+            <label for="cartao-cvv">CVV:</label>
+            <input type="text" id="cartao-cvv" name="cartao-cvv">
+        </div>
+        <button type="submit">Finalizar Compra</button>
+    </form>
+    <button id="fechar-compra-popup">Fechar</button>
+    </div>
+</div>  
+
+    </div>
+
+    <!-- Pop-up de compra de produto -->
+    <div id="compra-popup" class="popup">
+        <div class="popup-content">
+            <h2>Compra de Produto</h2>
+            <form id="compra-form">
+                <input type="hidden" id="produto-nome" name="produto-nome">
+                <input type="hidden" id="produto-preco" name="produto-preco">
+                <label for="compra-nome">Nome:</label>
+                <input type="text" id="compra-nome" name="compra-nome" required>
+                <label for="compra-telefone">Telefone:</label>
+                <input type="tel" id="compra-telefone" name="compra-telefone" required>
+                <label for="compra-cep">CEP:</label>
+                <input type="text" id="compra-cep" name="compra-cep" required>
+                <label for="compra-rua">Rua:</label>
+                <input type="text" id="compra-rua" name="compra-rua" required>
+                <label for="compra-bairro">Bairro:</label>
+                <input type="text" id="compra-bairro" name="compra-bairro" required>
+                <label for="compra-numero">Número:</label>
+                <input type="text" id="compra-numero" name="compra-numero" required>
+                <fieldset>
+                    <legend>Forma de Pagamento:</legend>
+                    <label><input type="radio" name="pagamento" value="dinheiro" required> Dinheiro</label>
+                    <label><input type="radio" name="pagamento" value="cartao"> Cartão</label>
+                    <label><input type="radio" name="pagamento" value="cheque"> Cheque</label>
+                    <label><input type="radio" name="pagamento" value="pix"> PIX</label>
+                </fieldset>
+                <div id="dados-cartao" style="display: none;">
+                    <label for="cartao-numero">Número do Cartão:</label>
+                    <input type="text" id="cartao-numero" name="cartao-numero">
+                    <label for="cartao-nome">Nome no Cartão:</label>
+                    <input type="text" id="cartao-nome" name="cartao-nome">
+                    <label for="cartao-validade">Validade:</label>
+                    <input type="text" id="cartao-validade" name="cartao-validade" placeholder="MM/AA">
+                    <label for="cartao-cvv">CVV:</label>
+                    <input type="text" id="cartao-cvv" name="cartao-cvv">
+                </div>
+                <button type="submit">Finalizar Compra</button>
+            </form>
+            <button id="fechar-compra-popup">Fechar</button>
+        </div>
+    </div>
+</body>
+</html>
